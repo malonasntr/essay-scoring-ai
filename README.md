@@ -36,10 +36,12 @@ Kinerja model diukur menggunakan metrik Mean Squared Error (MSE) untuk menilai s
 
 **🏆 Results**
 
-**| Model | MSE |**
 | Random Forest Regressor | 0.2432 | 
+
 | Multi-Layer Perceptron | 0.3884 | 
+
 | XGBRegressor | 0.4151 |
+
 | F-IDF + Linear Regression | 0.6686 |
 > 🔹 Model terbaik adalah Random Forest Regressor dengan nilai MSE terendah, menunjukkan kemampuannya dalam menangkap hubungan kompleks antar fitur teks.
 
