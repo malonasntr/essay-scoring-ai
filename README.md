@@ -1,12 +1,15 @@
 **✍️ Essay Scoring using Sentence-BERT and Machine Learning**
+
 **Dataset:** [Kaggle – Final Exam Artificial Intelligence 2025 (MATH ITS)](https://www.kaggle.com/competitions/final-exam-artificial-intelligence-2025-math-its/data)  
 
 **🎯 Problem Statement**
+
 Tugas ini bertujuan untuk **memprediksi nilai esai bahasa Inggris secara otomatis** berdasarkan empat aspek penilaian utama:  
 - **Task Achievement**  
 - **Coherence and Cohesion**  
 - **Lexical Resource**  
-- **Grammatical Range**  
+- **Grammatical Range**
+  
 Tujuan utama proyek ini adalah membangun sistem *automated essay scoring* yang dapat mempercepat proses penilaian dan menjaga konsistensi antar penilai.  
 
 **⚙️ Approach**
@@ -32,8 +35,8 @@ Beberapa model regresi diuji untuk memprediksi skor esai secara bersamaan (*mult
 Kinerja model diukur menggunakan metrik Mean Squared Error (MSE) untuk menilai seberapa jauh prediksi dari nilai sebenarnya.
 
 **🏆 Results**
+
 **| Model | MSE |**
-**|--------|------|**
 | Random Forest Regressor | 0.2432 | 
 | Multi-Layer Perceptron | 0.3884 | 
 | XGBRegressor | 0.4151 |
