@@ -10,18 +10,21 @@ Tugas ini bertujuan untuk **memprediksi nilai esai bahasa Inggris secara otomati
 Tujuan utama proyek ini adalah membangun sistem *automated essay scoring* yang dapat mempercepat proses penilaian dan menjaga konsistensi antar penilai.  
 
 **⚙️ Approach**
+
 🔍 1. Data Preprocessing  
 - Menggabungkan kolom `prompt` dan `essay` menjadi satu teks utuh.  
 - Menghapus baris dengan nilai target yang kosong.  
 - Melakukan *feature extraction* menggunakan dua pendekatan:  
   - **TF-IDF Vectorizer** untuk representasi berbasis kata.  
-  - **Sentence-BERT (paraphrase-MiniLM-L6-v2)** untuk representasi berbasis makna (semantic embedding).  
+  - **Sentence-BERT (paraphrase-MiniLM-L6-v2)** untuk representasi berbasis makna (semantic embedding).
+    
 🧠 2. Modeling
 Beberapa model regresi diuji untuk memprediksi skor esai secara bersamaan (*multi-output regression*):  
 - Random Forest Regressor 
 - Multi-Layer Perceptron (MLP)
 - XGBoost Regressor
 - TF-IDF + Linear Regression (Baseline)
+  
 📈 3. Evaluation
 Kinerja model diukur menggunakan metrik Mean Squared Error (MSE) untuk menilai seberapa jauh prediksi dari nilai sebenarnya.
 
