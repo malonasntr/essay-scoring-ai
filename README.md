@@ -16,14 +16,13 @@ Tujuan utama proyek ini adalah membangun sistem *automated essay scoring* yang d
 - Melakukan *feature extraction* menggunakan dua pendekatan:  
   - **TF-IDF Vectorizer** untuk representasi berbasis kata.  
   - **Sentence-BERT (paraphrase-MiniLM-L6-v2)** untuk representasi berbasis makna (semantic embedding).  
-**🧠 2. Modeling**
+🧠 2. Modeling
 Beberapa model regresi diuji untuk memprediksi skor esai secara bersamaan (*multi-output regression*):  
 - Random Forest Regressor 
 - Multi-Layer Perceptron (MLP)
 - XGBoost Regressor
 - TF-IDF + Linear Regression (Baseline)
-- 
-**📈 3. Evaluation**
+📈 3. Evaluation
 Kinerja model diukur menggunakan metrik Mean Squared Error (MSE) untuk menilai seberapa jauh prediksi dari nilai sebenarnya.
 
 **🏆 Results**
